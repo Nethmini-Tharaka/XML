@@ -11,7 +11,7 @@ public class XmlParser {
     public static void main(String[] args) {
         try {
             // Load the XML file
-            File xmlFile = new File("C:\\Users\\VINOD\\Documents\\NetBeansProjects\\XmlParser\\build\\classes\\xmlparser\\books.xml");
+            File xmlFile = new File("C:\\Users\\Tharaka\\Documents\\NetBeansProjects\\XmlParser\\build\\classes\\xmlparser\\books.xml");
             if (!xmlFile.exists()) {
                 System.out.println("books.xml file not found!");
                 return;
@@ -37,7 +37,7 @@ public class XmlParser {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(document);
-            StreamResult result = new StreamResult(new File("C:\\Users\\VINOD\\Documents\\NetBeansProjects\\XmlParser\\build\\classes\\xmlparser\\updated_books.xml"));
+            StreamResult result = new StreamResult(new File("C:\\Users\\Tharka\\Documents\\NetBeansProjects\\XmlParser\\build\\classes\\xmlparser\\updated_books.xml"));
             transformer.transform(source, result);
 
             System.out.println("Updated XML saved to updated_books.xml.");
